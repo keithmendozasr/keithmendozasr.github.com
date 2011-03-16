@@ -1,19 +1,22 @@
 div.main {
+	position: relative;
 	width: 819px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 div.menu {
+	position: absolute;
 	width: 20%;
-	float: left;
-	/*margin-left: 0px;*/
-	/*margin-top: 0px;*/
+	margin-left: 0px;
+	margin-top: 0px;
 	/*margin-right: auto;*/
 }
 
 div.body {
-	float: left;
-	/*margin-right: 0px;*/
-	/*margin-top: 0px;*/
+	position: absolute;
+	width: 80%;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-left: 20%;
 }
