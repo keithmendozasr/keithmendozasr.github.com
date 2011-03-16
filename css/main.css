@@ -3,3 +3,17 @@ div.main {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+div.menu {
+	width: 20%;
+	float: left;
+	/*margin-left: 0px;*/
+	/*margin-top: 0px;*/
+	/*margin-right: auto;*/
+}
+
+div.body {
+	float: left;
+	/*margin-right: 0px;*/
+	/*margin-top: 0px;*/
+}
