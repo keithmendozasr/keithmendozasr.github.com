@@ -2,10 +2,23 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
     <head>
-		<base href="http://androidapp.homepluspower.info/" />
-		<!--<base href="file:///Users/mendozak/my_stuff/app_site/keithmendozasr.github.com/" />-->
+		<!--<base href="http://androidapp.homepluspower.info/" />-->
+		<base href="file:///Users/mendozak/my_stuff/app_site/keithmendozasr.github.com/" />
         <title>Nearby Metars</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<style type="text/css">
+			div.color {
+				display: table-cell;
+				width: 50px;
+				border: solid #000000 1px;
+			}
+			
+			div.cloud_type {
+				display: table-cell;
+				padding-left: 5px;
+				border: solid #000000 1px;
+			}
+		</style>
     </head>
     <body>
         <div class="main">
@@ -17,14 +30,37 @@
 				</ul>
 			</div>
 			<div class="body">
-				<h1>Nearby Metars</h1>
+				<img src="NearbyMetars/images/nearby_metars_web.png" width="140" height="140" /><br />
 				<p>Notice, please read</p>
 				<p>Not for navigation. This app is not intended as a substitute for a weather briefing obtained from a Flight Service Station (1-800-WXBRIEF). Currently, the information contained here does not meet the FAA requirements for a pre-flight weather brief. Therefore, it's important that pilots still call and obtain a briefing from an FAA Flight Service Specialist.</p>
 				<p>Nearby Metars retrieves METAR data from reporting locations within a 50 nautical mile radius of your current location. To view the METAR raw text, tap on the icon.<br />
 				<img src="NearbyMetars/images/screen1.png" /></p>
 				<p>You can also scroll pan the map and get METAR data around the location centered on the screen, and clicking on "Get Metars" menu item.<br />
 				<img src="NearbyMetars/images/screen2.png" /></p>
-				
+				<h3>Cloud coverage icon</h3>
+				<p>The icon color indicates the highest cloud coverage reported--irregardless of height. So, for example if the metar data is
+				<blockquote>22006KT 10SM FEW150 OVC250...</blockquote>
+				The icon will still show the darkest grey. A white icon indicates clear of clouds. The litest shade of black is for few clouds and the darkest shade is for overcast.</p>
+				<p>Below is a table to show the cloud coverage</p>
+				<div style="display:table; margin: auto auto;">
+					<div style="display:table-row">
+						<div class="color" style="background-color:#FFFFFF;"></div><div class="cloud_type">CLR</div>
+					</div>
+					<div style="display:table-row">
+						<div class="color" style="background-color:#CDCDCD;"></div><div class="cloud_type">FEW</div>
+					</div>
+					<div style="display:table-row">
+						<div class="color" style="background-color:#999999;"></div><div class="cloud_type">SCT</div>
+					</div>
+					<div style="display:table-row">
+						<div class="color" style="background-color:#666666;"></div><div class="cloud_type">BKN</div>
+					</div>
+					<div style="display:table-row">						
+						<div class="color" style="background-color:#333333;"></div><div class="cloud_type">OVC</div>
+					</div>
+				</div>
+				<h3>Viewing raw METAR text</h3>
+				<p>Tapping on the icon will display the raw METAR text. Press your phone's back button to close the METAR screen</p>
 			</div>
 		</div>
     </body>
